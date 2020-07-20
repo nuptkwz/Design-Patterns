@@ -7,9 +7,8 @@ import lombok.Data;
  * Date 2020/7/20 20:14
  * Created by kwz
  */
-@Data
 public class Dog implements Comparable<Dog> {
-    private int food;
+    int food;
 
     public Dog(int food) {
         this.food = food;

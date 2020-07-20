@@ -11,9 +11,10 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        int[] a = {3, 4, 6, 12, 1, 0, 5};
-        Sorter sorter = new Sorter();
-        sorter.sort(a);
-        System.out.println(Arrays.toString(a));
+//        int[] a = {3, 4, 6, 12, 1, 0, 5};
+        Dog[] dog = {new Dog(3), new Dog(5), new Dog(1)};
+        Sorter<Dog> sorter = new Sorter();
+        sorter.sort(dog, new DogComparator());
+        System.out.println(Arrays.toString(dog));
     }
 }
