@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Description
- * 策略模式
+ * 策略模式:
  * Date 2020/7/20 20:08
  * Created by kwz
  */
