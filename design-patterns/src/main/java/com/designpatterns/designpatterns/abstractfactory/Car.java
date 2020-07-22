@@ -1,11 +1,11 @@
-package com.designpatterns.designpatterns.factory.factorymethod;
+package com.designpatterns.designpatterns.abstractfactory;
 
 /**
  * Description
  * Date 2020/7/22 21:26
  * Created by kwz
  */
-public class Car implements Moveable{
+public class Car extends Vehicle{
 
 
     public void go() {

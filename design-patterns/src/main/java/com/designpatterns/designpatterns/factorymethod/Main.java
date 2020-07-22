@@ -1,6 +1,4 @@
-package com.designpatterns.designpatterns.factory.factorymethod;
-
-import com.designpatterns.designpatterns.factory.factorymethod.Car;
+package com.designpatterns.designpatterns.factorymethod;
 
 /**
  * Description
@@ -11,7 +9,9 @@ import com.designpatterns.designpatterns.factory.factorymethod.Car;
 public class Main {
 
     public static void main(String[] args) {
-        Car car = new Car();
+//        Car car = new Car();
+//        car.go();
+        Car car = new CarFactory().create();
         car.go();
     }
 }

@@ -1,4 +1,4 @@
-package com.designpatterns.designpatterns.factory.factorymethod;
+package com.designpatterns.designpatterns.factorymethod;
 
 /**
  * Description

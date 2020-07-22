@@ -1,8 +1,8 @@
-package com.designpatterns.designpatterns.factory.factorymethod;
+package com.designpatterns.designpatterns.factorymethod;
 
 /**
  * Description
- * 简单工厂
+ * 简单工厂(它的扩展性不好)
  * Date 2020/7/22 22:51
  * Created by kwz
  */
