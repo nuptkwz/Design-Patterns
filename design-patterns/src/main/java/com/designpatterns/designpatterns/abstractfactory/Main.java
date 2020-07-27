@@ -12,7 +12,14 @@ import com.designpatterns.designpatterns.factorymethod.CarFactory;
 public class Main {
 
     public static void main(String[] args) {
-        Car car = new Car();
-        car.go();
+        AbstractFactory f = new ModernFactory();
+        Vehicle vehicle = f.createVehicle();
+        vehicle.go();
+
+        Weapon weapon = f.createWeapon();
+        weapon.shoot();
+
+        Food food = f.createFood();
+        food.printName();
     }
 }
