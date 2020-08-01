@@ -5,6 +5,9 @@ import java.util.List;
 
 /**
  * Description
+ * 在很多时候，观察者需要根据事件的具体情况来进行处理，
+ * 大多数时候，我们处理事件的时候，需要事件源对象
+ * 事件也可以形成继承体系
  * Date 2020/8/1 0:18
  * Created by kwz
  */
@@ -80,6 +83,6 @@ class Dog implements Observer {
     }
 }
 
-public class Main3 {
+public class Main4 {
 
 }
