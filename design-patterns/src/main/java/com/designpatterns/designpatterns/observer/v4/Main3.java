@@ -24,14 +24,27 @@ class Child {
 
     public void wakeUp() {
         cry = true;
+
+        WakeUpEvent wakeUpEvent = new WakeUpEvent(System.currentTimeMillis(), "bed");
         for (Observer o : observers) {
-            o.actionOnWakeUp();
+            o.actionOnWakeUp(wakeUpEvent);
         }
     }
 }
 
+//事件类 fire event
+class WakeUpEvent {
+    long timestamp;
+    String loc;
+
+    public WakeUpEvent(long timestamp, String loc) {
+        this.timestamp = timestamp;
+        this.loc = loc;
+    }
+}
+
 interface Observer {
-    void actionOnWakeUp();
+    void actionOnWakeUp(WakeUpEvent wakeUpEvent);
 }
 
 class Dad implements Observer {
@@ -40,7 +53,7 @@ class Dad implements Observer {
     }
 
     @Override
-    public void actionOnWakeUp() {
+    public void actionOnWakeUp(WakeUpEvent wakeUpEvent) {
         feed();
     }
 }
@@ -51,7 +64,7 @@ class Mum implements Observer {
     }
 
     @Override
-    public void actionOnWakeUp() {
+    public void actionOnWakeUp(WakeUpEvent wakeUpEvent) {
         feed();
     }
 }
@@ -62,12 +75,11 @@ class Dog implements Observer {
     }
 
     @Override
-    public void actionOnWakeUp() {
+    public void actionOnWakeUp(WakeUpEvent wakeUpEvent) {
         feed();
     }
 }
 
 public class Main3 {
-
 
 }
