@@ -13,7 +13,9 @@ public class Main {
 
     public static void main(String[] args) {
         //v1
-        Tank tank = new Tank();
-        tank.move();
+//        Tank tank = new Tank();
+//        tank.move();
+
+
     }
 }
