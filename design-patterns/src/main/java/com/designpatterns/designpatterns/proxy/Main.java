@@ -1,5 +1,7 @@
 package com.designpatterns.designpatterns.proxy;
 
+import com.designpatterns.designpatterns.proxy.v1.Tank;
+
 /**
  * Description
  * 代理模式：
@@ -10,6 +12,8 @@ package com.designpatterns.designpatterns.proxy;
 public class Main {
 
     public static void main(String[] args) {
-
+        //v1
+        Tank tank = new Tank();
+        tank.move();
     }
 }
