@@ -1,0 +1,15 @@
+package com.designpatterns.designpatterns.proxy;
+
+/**
+ * Description
+ * 代理模式：
+ * 慎用继承（耦合度太高）
+ * Date 2020/8/5 23:25
+ * Created by kwz
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+    }
+}
