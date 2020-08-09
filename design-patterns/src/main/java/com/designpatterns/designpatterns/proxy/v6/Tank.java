@@ -1,5 +1,7 @@
 package com.designpatterns.designpatterns.proxy.v6;
 
+import java.util.Random;
+
 /**
  * Description
  * Date 2020/8/9 23:59
@@ -12,7 +14,7 @@ public class Tank implements Movable {
      */
     @Override
     public void move() {
-        System.out.println("Tank moving claclacla...");
+        System.out.println("Tank moving ...");
         try {
             Thread.sleep(new Random().nextInt(10000));
         } catch (InterruptedException e) {
@@ -36,9 +38,9 @@ public class Tank implements Movable {
 }
 
 class TankTimeProxy implements Movable {
-    Movable m;
+    private Movable m;
 
-    public TankTimeProxy(Movable m) {
+    TankTimeProxy(Movable m) {
         this.m = m;
     }
 
@@ -52,9 +54,9 @@ class TankTimeProxy implements Movable {
 }
 
 class TankLogProxy implements Movable {
-    Movable m;
+    private Movable m;
 
-    public TankLogProxy(Movable m) {
+    TankLogProxy(Movable m) {
         this.m = m;
     }
 
@@ -68,4 +70,5 @@ class TankLogProxy implements Movable {
 }
 
 interface Movable {
-    void
+    void move();
+}
