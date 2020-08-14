@@ -21,7 +21,7 @@ public class LogInterceptor implements InvocationHandler {
      *
      * @param target
      */
-    public LogInterceptor(Object target) {
+    LogInterceptor(Object target) {
         this.target = target;
     }
 
