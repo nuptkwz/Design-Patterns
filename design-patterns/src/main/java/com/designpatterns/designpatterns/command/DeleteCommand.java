@@ -18,7 +18,7 @@ public class DeleteCommand extends Command {
     }
 
     @Override
-    public void doit() {
+    public void doIt() {
         delete = c.msg.substring(0, 5);
         c.msg = c.msg.substring(5, c.msg.length());
         log.info(c.msg);

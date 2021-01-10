@@ -6,7 +6,7 @@ package com.designpatterns.designpatterns.command;
  * Created by kwz
  */
 public abstract class Command {
-    public abstract void doit();//exec run
+    public abstract void doIt();//exec run
 
     public abstract void undo();
 }

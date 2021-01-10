@@ -19,7 +19,7 @@ public class InsertCommand extends Command {
     }
 
     @Override
-    public void doit() {
+    public void doIt() {
         c.msg = c.msg + strToInsert;
         log.info(c.msg);
     }

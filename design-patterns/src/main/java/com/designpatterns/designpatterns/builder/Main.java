@@ -15,7 +15,7 @@ public class Main {
         //可以灵活指定需要build的参数
         Person person = new Person.PersonBuilder()
                 .basicInfo(1, "zhangsan", 22)
-//                .score(96)
+                .score(96)
                 .weight(66)
                 .loc("aa", "22")
                 .build();

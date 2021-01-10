@@ -18,7 +18,7 @@ public class CopyCommand extends Command {
     }
 
     @Override
-    public void doit() {
+    public void doIt() {
         c.msg = c.msg + c.msg;
         log.info(c.msg);
     }

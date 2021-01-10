@@ -16,15 +16,15 @@ public class Main {
     public static void main(String[] args) {
         Content content = new Content();
         InsertCommand insertCommand = new InsertCommand(content);
-        insertCommand.doit();
+        insertCommand.doIt();
         insertCommand.undo();
 
         CopyCommand copyCommand = new CopyCommand(content);
-        copyCommand.doit();
+        copyCommand.doIt();
         copyCommand.undo();
 
         DeleteCommand deleteCommand = new DeleteCommand(content);
-        deleteCommand.doit();
+        deleteCommand.doIt();
         deleteCommand.undo();
 
         log.info(content.msg);
