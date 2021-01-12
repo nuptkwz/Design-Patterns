@@ -10,8 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DeleteCommand extends Command {
 
-    Content c;
-    String delete;
+    private Content c;
+    private String delete;
 
     public DeleteCommand(Content c) {
         this.c = c;
