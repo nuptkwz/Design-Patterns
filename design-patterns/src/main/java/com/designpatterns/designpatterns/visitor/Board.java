@@ -8,7 +8,7 @@ package com.designpatterns.designpatterns.visitor;
 public class Board extends ComputerPart {
 
     @Override
-    void accept(Visitor v) {
+    void accept(IVisitor v) {
         v.visitBoard(this);
     }
 
